@@ -6,16 +6,16 @@ Template For React Native Project
 
 - adding context styled themes
 
-# How to import google font
+## How to import google font
 
-## Step 1
+### Step 1
 
 expo install @expo-google-fonts/`familyname`
 
 expo install @expo-google-fonts/oswald
 expo install @expo-google-fonts/lato
 
-## Step 2
+### Step 2
 
 import it in app.js
 

@@ -1,9 +1,11 @@
+import React from "react";
 import styled from "styled-components/native";
+import { useTheme } from "react-native-paper";
 
 const defaultTextStyles = (theme) => `
   font-family: ${theme.fonts.body};
   font-weight: ${theme.fontWeights.regular};
-  color: ${theme.colors.text.primary};
+  color: ${theme.colors.text};
   flex-wrap: wrap;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -18,7 +20,7 @@ const hint = (theme) => `
 `;
 
 const error = (theme) => `
-    color: ${theme.colors.text.error};
+    color: ${theme.colors.error};
 `;
 
 const caption = (theme) => `
@@ -40,11 +42,17 @@ const variants = {
   hint,
 };
 
-export const Text = styled.Text`
+const TextStyle = styled.Text`
   ${({ theme }) => defaultTextStyles(theme)}
   ${({ variant, theme }) => variants[variant](theme)}
 `;
 
-Text.defaultProps = {
-  variant: "body",
+export const Text = ({ variant = "body", children }) => {
+  const theme = useTheme();
+  // return null;
+  return (
+    <TextStyle theme={theme} variant={variant}>
+      {children}
+    </TextStyle>
+  );
 };

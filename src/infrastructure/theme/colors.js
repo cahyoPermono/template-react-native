@@ -7,18 +7,12 @@ export const colors = {
   // background: "#f6f6f6", //background color for pages, such as lists.
   // surface: white,
   // error: "#B00020",
-  // text: black,
+  text: "#262626",
   // onSurface: "#000000", //background color for snackbars
   // disabled: color(black).alpha(0.26).rgb().string(),
   // placeholder: color(black).alpha(0.54).rgb().string(),
   // backdrop: color(black).alpha(0.5).rgb().string(),
   // notification: pinkA400,
-  textColor: {
-    primary: "#262626",
-    secondary: "#757575",
-    disabled: "#9C9C9C",
-    inverse: "#FFFFFF",
-    error: "#D0421B",
-    success: "#138000",
-  },
+  success: "#138000",
+  inverse: "#FFFFFF",
 };

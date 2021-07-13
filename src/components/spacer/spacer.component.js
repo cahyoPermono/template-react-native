@@ -1,5 +1,6 @@
 import React from "react";
-import styled, { useTheme } from "styled-components/native";
+import { useTheme } from "react-native-paper";
+import styled from "styled-components/native";
 
 const sizeVariant = {
   small: 1,

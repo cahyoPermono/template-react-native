@@ -13,4 +13,6 @@ export const colors = {
   //   placeholder: color(white).alpha(0.54).rgb().string(),
   //   backdrop: color(black).alpha(0.5).rgb().string(),
   //   notification: pinkA100,
+  success: "#138000",
+  inverse: "#262626",
 };

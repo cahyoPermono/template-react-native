@@ -19,14 +19,14 @@ expo install @expo-google-fonts/lato
 
 import it in app.js
 
+> Only list weight that you need
+
 ```javascript
 import {
   useFonts as useOswald,
   Oswald_400Regular,
 } from "@expo-google-fonts/oswald";
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
-
-> Only list weight that you need
 
 const [oswaldLoaded] = useOswald({
   Oswald_400Regular,

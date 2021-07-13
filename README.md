@@ -13,8 +13,9 @@ Template For React Native Project
 expo install @expo-google-fonts/`familyname`
 
 example:
--expo install @expo-google-fonts/oswald
--expo install @expo-google-fonts/lato
+
+- expo install @expo-google-fonts/oswald
+- expo install @expo-google-fonts/lato
 
 ### Step 2
 
